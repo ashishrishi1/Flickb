@@ -13,13 +13,13 @@ const ProductCard = ({ product, onFavorite, isFavorited }) => {
   };
 
   return (
-    <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-teal-500">
+    <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-blue-500">
       <Link to={`/product/${product.id}`}>
-        <div className="relative overflow-hidden bg-gray-100">
+        <div className="relative overflow-hidden bg-gray-50">
           <img
             src={product.image}
             alt={product.title}
-            className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           {product.isFeatured && (
             <div className="absolute top-2 left-2 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">
@@ -29,15 +29,15 @@ const ProductCard = ({ product, onFavorite, isFavorited }) => {
         </div>
       </Link>
       
-      <div className="p-4">
+      <div className="p-4 bg-white">
         <Link to={`/product/${product.id}`}>
-          <h3 className="font-semibold text-lg mb-2 text-gray-800 line-clamp-2 group-hover:text-teal-600 transition-colors">
+          <h3 className="font-semibold text-lg mb-2 text-gray-800 line-clamp-2 group-hover:text-blue-700 transition-colors">
             {product.title}
           </h3>
         </Link>
         
         <div className="flex items-center justify-between mb-3">
-          <p className="text-2xl font-bold text-gray-900">{formatPrice(product.price)}</p>
+          <p className="text-2xl font-bold text-green-600">{formatPrice(product.price)}</p>
           <button
             onClick={(e) => {
               e.preventDefault();
