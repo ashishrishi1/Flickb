@@ -13,7 +13,7 @@ const ProductCard = ({ product, onFavorite, isFavorited }) => {
   };
 
   return (
-    <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-blue-500">
+    <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#3A77FF]">
       <Link to={`/product/${product.id}`}>
         <div className="relative overflow-hidden bg-gray-50">
           <img
