@@ -62,9 +62,9 @@ const Home = () => {
             <Link
               key={category.id}
               to={`/category/${category.id}`}
-              className="bg-white rounded-lg p-6 flex flex-col items-center justify-center hover:shadow-lg hover:border-teal-500 border-2 border-transparent transition-all duration-300 group"
+              className="bg-white rounded-lg p-6 flex flex-col items-center justify-center hover:shadow-lg hover:border-[#3A77FF] border-2 border-transparent transition-all duration-300 group"
             >
-              <div className="text-teal-600 mb-3 group-hover:scale-110 transition-transform">
+              <div className="text-[#3A77FF] mb-3 group-hover:scale-110 transition-transform">
                 {getIconComponent(category.icon)}
               </div>
               <h3 className="font-semibold text-sm text-center text-gray-800 mb-1">{category.name}</h3>
