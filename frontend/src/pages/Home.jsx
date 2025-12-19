@@ -32,13 +32,13 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16">
+      <div className="bg-[#3A77FF] text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-center mb-6">
             <img 
-              src="https://customer-assets.emergentagent.com/job_online-bazaar-89/artifacts/z3u1m5ig_Gemini_Generated_Image_sn5qd6sn5qd6sn5q.png" 
+              src="https://customer-assets.emergentagant.com/job_online-bazaar-89/artifacts/z3u1m5ig_Gemini_Generated_Image_sn5qd6sn5qd6sn5q.png" 
               alt="FlickB" 
-              className="h-20 w-auto filter brightness-0 invert"
+              className="h-20 w-auto"
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">Find anything you need</h1>
