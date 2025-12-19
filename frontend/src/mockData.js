@@ -56,17 +56,17 @@ export const products = [
   },
   {
     id: 3,
-    title: 'MacBook Pro 14 inch M1 Pro',
-    price: 145000,
-    location: 'Bangalore, Karnataka',
+    title: 'Sony A7 III Mirrorless Camera Body - 48k Shutter Count',
+    price: 89000,
+    location: 'Mumbai, Maharashtra',
     image: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg',
     category: 'Electronics',
     categoryId: 4,
-    postedAt: '1 day ago',
-    description: 'MacBook Pro 14-inch with M1 Pro chip, 16GB RAM, 512GB SSD. 6 months old with warranty.',
+    postedAt: '5 days ago',
+    description: 'Sony A7 III camera body, good condition, minor cosmetic wear, clean sensor. 48k shutter count. Includes body cap, battery, charger, original strap (no lens). Sensor professionally cleaned Dec 2024. Test autofocus and shutter in person.',
     seller: {
-      name: 'Priya Desai',
-      memberSince: 'Member since 2021',
+      name: 'Priya Singh',
+      memberSince: 'Member since 2020',
       verified: true
     },
     images: [
@@ -75,18 +75,18 @@ export const products = [
   },
   {
     id: 4,
-    title: 'Modern Yellow Accent Chair',
-    price: 8500,
-    location: 'Pune, Maharashtra',
+    title: 'Solid Oak Dining Table + 6 Chairs - Excellent Condition',
+    price: 48000,
+    location: 'Delhi NCR',
     image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmV8ZW58MHx8fHwxNzY2MTM5MzgzfDA&ixlib=rb-4.1.0&q=85',
     category: 'Furniture',
     categoryId: 5,
-    postedAt: '3 hours ago',
-    description: 'Beautiful modern accent chair in yellow. Perfect condition, barely used.',
+    postedAt: '2 weeks ago',
+    description: 'Solid oak dining table 72"x40" natural finish, 3 years old, no major scratches. Includes 6 upholstered chairs with removable covers. Pickup preferred (ground floor). Can deliver within 15km for ₹500 extra. 8 detailed photos available.',
     seller: {
-      name: 'Sneha Patel',
-      memberSince: 'Member since 2022',
-      verified: false
+      name: 'Sneha Mehta',
+      memberSince: 'Member since 2018',
+      verified: true
     },
     images: [
       'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmV8ZW58MHx8fHwxNzY2MTM5MzgzfDA&ixlib=rb-4.1.0&q=85'
