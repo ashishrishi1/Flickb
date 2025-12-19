@@ -106,7 +106,7 @@ const ProductDetail = ({ isAuthenticated }) => {
                       alt={`${product.title} ${idx + 1}`}
                       onClick={() => setCurrentImageIndex(idx)}
                       className={`w-20 h-20 object-cover rounded cursor-pointer border-2 transition-all ${
-                        currentImageIndex === idx ? 'border-teal-500' : 'border-gray-200 hover:border-teal-300'
+                        currentImageIndex === idx ? 'border-[#3A77FF]' : 'border-gray-200 hover:border-teal-300'
                       }`}
                     />
                   ))}
