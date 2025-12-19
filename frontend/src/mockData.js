@@ -35,17 +35,17 @@ export const products = [
   },
   {
     id: 2,
-    title: 'Honda City 2019 - Top Model',
-    price: 850000,
-    location: 'Delhi',
+    title: '2016 Honda Civic EX - 82k miles - Excellent Maintenance Records',
+    price: 725000,
+    location: 'Pune, Maharashtra',
     image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHx2ZWhpY2xlc3xlbnwwfHx8fDE3NjYxMzkzODh8MA&ixlib=rb-4.1.0&q=85',
     category: 'Vehicles',
     categoryId: 2,
-    postedAt: '5 hours ago',
-    description: 'Honda City ZX model, petrol, 35000 km driven. First owner, well maintained.',
+    postedAt: '1 week ago',
+    description: '2016 Honda Civic EX, 82k miles, single owner, no accidents (inspection report available). 2.0L automatic, recently replaced front brakes and battery. Bluetooth, backup camera, new tires (2024). Clean title, maintenance receipts included.',
     seller: {
-      name: 'Amit Kumar',
-      memberSince: 'Member since 2018',
+      name: 'Amit Verma',
+      memberSince: 'Member since 2017',
       verified: true
     },
     images: [
