@@ -132,18 +132,18 @@ export const products = [
   },
   {
     id: 7,
-    title: 'Wireless Headphones - Sony WH-1000XM4',
-    price: 18000,
+    title: 'Samsung Galaxy S23 Ultra 512GB - Phantom Black - Like New',
+    price: 78000,
     location: 'Chennai, Tamil Nadu',
     image: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxlbGVjdHJvbmljc3xlbnwwfHx8fDE3NjYwODIyNDN8MA&ixlib=rb-4.1.0&q=85',
-    category: 'Electronics',
-    categoryId: 4,
-    postedAt: '4 hours ago',
-    description: 'Sony WH-1000XM4 noise cancelling headphones. 3 months old with warranty.',
+    category: 'Mobiles',
+    categoryId: 1,
+    postedAt: '1 day ago',
+    description: 'Samsung Galaxy S23 Ultra 512GB Phantom Black, like new, 8 months old. Battery 98%, includes S-Pen, original box, 45W charger, protective case. Unlocked for all carriers. Screen protector applied. Full warranty transferable.',
     seller: {
       name: 'Arun Kumar',
-      memberSince: 'Member since 2020',
-      verified: false
+      memberSince: 'Member since 2021',
+      verified: true
     },
     images: [
       'https://images.unsplash.com/photo-1550009158-9ebf69173e03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxlbGVjdHJvbmljc3xlbnwwfHx8fDE3NjYwODIyNDN8MA&ixlib=rb-4.1.0&q=85'
@@ -151,17 +151,17 @@ export const products = [
   },
   {
     id: 8,
-    title: 'Dining Table Set with 6 Chairs',
-    price: 35000,
+    title: 'Modern L-Shaped Office Desk with Storage - Walnut Finish',
+    price: 22000,
     location: 'Kolkata, West Bengal',
     image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxmdXJuaXR1cmV8ZW58MHx8fHwxNzY2MTM5MzgzfDA&ixlib=rb-4.1.0&q=85',
     category: 'Furniture',
     categoryId: 5,
-    postedAt: '2 days ago',
-    description: 'Wooden dining table with 6 cushioned chairs. Solid teak wood construction.',
+    postedAt: '6 days ago',
+    description: 'L-shaped office desk 60"x48" walnut finish with 3 drawers and cable management. Used for 1 year, excellent condition. Sturdy metal frame, scratch-resistant surface. Self-assembly required. Delivery available in city limits.',
     seller: {
       name: 'Sanjay Ghosh',
-      memberSince: 'Member since 2021',
+      memberSince: 'Member since 2020',
       verified: true
     },
     images: [
