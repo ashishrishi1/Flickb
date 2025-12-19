@@ -32,7 +32,7 @@ const Favorites = ({ isAuthenticated }) => {
           <h2 className="text-2xl font-bold mb-4">Login Required</h2>
           <p className="text-gray-600 mb-6">Please login to view your favorites</p>
           <Link to="/login">
-            <Button className="bg-teal-600 hover:bg-teal-700">Go to Login</Button>
+            <Button className="bg-[#FF8C00] hover:bg-[#FF7A00]">Go to Login</Button>
           </Link>
         </Card>
       </div>
@@ -50,7 +50,7 @@ const Favorites = ({ isAuthenticated }) => {
             <h2 className="text-2xl font-semibold mb-4 text-gray-700">No favorites yet</h2>
             <p className="text-gray-500 mb-6">Start browsing and save items you like</p>
             <Link to="/">
-              <Button className="bg-teal-600 hover:bg-teal-700">Browse Products</Button>
+              <Button className="bg-[#FF8C00] hover:bg-[#FF7A00]">Browse Products</Button>
             </Link>
           </Card>
         ) : (
