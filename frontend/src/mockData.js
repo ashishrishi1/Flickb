@@ -94,14 +94,14 @@ export const products = [
   },
   {
     id: 5,
-    title: 'Green Sofa Set - 3 Seater',
-    price: 25000,
+    title: 'IKEA MALM Queen Bed Frame + Mattress (2019)',
+    price: 12000,
     location: 'Hyderabad, Telangana',
     image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxmdXJuaXR1cmV8ZW58MHx8fHwxNzY2MTM5MzgzfDA&ixlib=rb-4.1.0&q=85',
     category: 'Furniture',
     categoryId: 5,
-    postedAt: '6 hours ago',
-    description: 'Comfortable 3-seater sofa in green fabric. 1 year old, excellent condition.',
+    postedAt: '4 days ago',
+    description: 'IKEA MALM Queen (60"x80") bed frame good condition, mattress fair (minor sag). Slatted base, 2 under-bed drawers included. Memory foam mattress 8" height with removable cover. Pickup from 2nd floor (bring help). Mattress hygiene protector recommended.',
     seller: {
       name: 'Vikram Reddy',
       memberSince: 'Member since 2019',
@@ -113,17 +113,17 @@ export const products = [
   },
   {
     id: 6,
-    title: 'Jeep Wrangler 2020 - Adventure Ready',
-    price: 4500000,
+    title: '2012 Toyota Tacoma TRD Off-Road - 150k Miles - Well-Maintained',
+    price: 1350000,
     location: 'Goa',
     image: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHx2ZWhpY2xlc3xlbnwwfHx8fDE3NjYxMzkzODh8MA&ixlib=rb-4.1.0&q=85',
     category: 'Vehicles',
     categoryId: 2,
-    postedAt: '1 day ago',
-    description: 'Jeep Wrangler Unlimited Rubicon, 15000 km, diesel. Modified for off-roading.',
+    postedAt: '10 days ago',
+    description: '2012 Toyota Tacoma TRD Off-Road, 150k miles. Solid frame with aftermarket suspension lift, skid plates, bed liner. No frame rust. Timing belt serviced at 120k, new rear shocks 2024. Clean title. Detailed undercarriage photos available, mechanic inspection welcome.',
     seller: {
       name: 'Rajesh Nair',
-      memberSince: 'Member since 2017',
+      memberSince: 'Member since 2016',
       verified: true
     },
     images: [
