@@ -160,7 +160,7 @@ const PostAd = ({ isAuthenticated }) => {
                   </div>
                 ))}
                 {imagePreviews.length < 5 && (
-                  <label className="border-2 border-dashed border-gray-300 rounded-lg h-32 flex flex-col items-center justify-center cursor-pointer hover:border-teal-500 transition-colors">
+                  <label className="border-2 border-dashed border-gray-300 rounded-lg h-32 flex flex-col items-center justify-center cursor-pointer hover:border-[#3A77FF] transition-colors">
                     <Upload className="text-gray-400 mb-2" size={32} />
                     <span className="text-sm text-gray-500">Add Photo</span>
                     <input
