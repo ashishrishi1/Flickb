@@ -1,14 +1,14 @@
-// Mock data for OLX clone
+// Mock data for FlickB marketplace
 
 export const categories = [
-  { id: 1, name: 'Mobiles', icon: 'Smartphone', count: 1250 },
-  { id: 2, name: 'Vehicles', icon: 'Car', count: 845 },
-  { id: 3, name: 'Property', icon: 'Home', count: 320 },
-  { id: 4, name: 'Electronics', icon: 'Laptop', count: 670 },
-  { id: 5, name: 'Furniture', icon: 'Sofa', count: 420 },
-  { id: 6, name: 'Fashion', icon: 'Shirt', count: 890 },
-  { id: 7, name: 'Books', icon: 'Book', count: 210 },
-  { id: 8, name: 'Pets', icon: 'Cat', count: 150 },
+  { id: 1, name: 'Mobiles', icon: 'Smartphone', count: 2847 },
+  { id: 2, name: 'Vehicles', icon: 'Car', count: 1523 },
+  { id: 3, name: 'Property', icon: 'Home', count: 895 },
+  { id: 4, name: 'Electronics', icon: 'Laptop', count: 1456 },
+  { id: 5, name: 'Furniture', icon: 'Sofa', count: 1134 },
+  { id: 6, name: 'Fashion', icon: 'Shirt', count: 2201 },
+  { id: 7, name: 'Books', icon: 'Book', count: 567 },
+  { id: 8, name: 'Pets', icon: 'Cat', count: 389 },
 ];
 
 export const products = [
