@@ -22,7 +22,11 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-3xl font-bold text-teal-600">OLX</div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_online-bazaar-89/artifacts/z3u1m5ig_Gemini_Generated_Image_sn5qd6sn5qd6sn5q.png" 
+              alt="FlickB" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Search Bar - Desktop */}
