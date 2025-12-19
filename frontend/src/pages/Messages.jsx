@@ -77,7 +77,7 @@ const Messages = ({ isAuthenticated }) => {
                     key={conv.id}
                     onClick={() => setSelectedChat(conv)}
                     className={`w-full p-4 border-b hover:bg-gray-50 transition-colors text-left ${
-                      selectedChat?.id === conv.id ? 'bg-teal-50' : ''
+                      selectedChat?.id === conv.id ? 'bg-[#3A77FF]-50' : ''
                     }`}
                   >
                     <div className="flex items-center space-x-3">
