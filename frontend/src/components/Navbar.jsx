@@ -62,7 +62,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 </Link>
                 <div className="relative group">
                   <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-700-600 transition-colors">
-                    <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center text-white font-medium">
+                    <div className="w-8 h-8 bg-blue-700-600 rounded-full flex items-center justify-center text-white font-medium">
                       {user?.name?.charAt(0) || 'U'}
                     </div>
                     <span className="font-medium">{user?.name || 'User'}</span>
@@ -83,7 +83,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
               </Link>
             )}
             <Link to="/post-ad">
-              <Button className="bg-teal-600 hover:bg-teal-700 text-white flex items-center space-x-2 px-6 py-5 rounded-full shadow-md hover:shadow-lg transition-all">
+              <Button className="bg-blue-700-600 hover:bg-blue-700-700 text-white flex items-center space-x-2 px-6 py-5 rounded-full shadow-md hover:shadow-lg transition-all">
                 <Plus size={20} />
                 <span className="font-bold">SELL</span>
               </Button>
@@ -137,7 +137,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 <span>My Ads</span>
               </Link>
               <Link to="/post-ad" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
+                <Button className="w-full bg-blue-700-600 hover:bg-blue-700-700 text-white">
                   <Plus size={20} className="mr-2" />
                   SELL
                 </Button>
@@ -155,7 +155,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 </Button>
               </Link>
               <Link to="/post-ad" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
+                <Button className="w-full bg-blue-700-600 hover:bg-blue-700-700 text-white">
                   <Plus size={20} className="mr-2" />
                   SELL
                 </Button>
