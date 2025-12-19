@@ -81,7 +81,7 @@ const MyAds = ({ isAuthenticated }) => {
                     <div className="flex items-start justify-between">
                       <div>
                         <h3 className="text-xl font-semibold mb-2">{ad.title}</h3>
-                        <p className="text-2xl font-bold text-teal-600 mb-3">{formatPrice(ad.price)}</p>
+                        <p className="text-2xl font-bold text-[#3A77FF] mb-3">{formatPrice(ad.price)}</p>
                         <div className="flex items-center space-x-6 text-sm text-gray-600">
                           <div className="flex items-center space-x-1">
                             <Eye size={16} />
