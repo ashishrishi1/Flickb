@@ -155,7 +155,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 </Button>
               </Link>
               <Link to="/post-ad" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-blue-700-600 hover:bg-blue-700-700 text-white">
+                <Button className="w-full bg-[#FF8C00] hover:bg-[#FF7A00] text-white">
                   <Plus size={20} className="mr-2" />
                   SELL
                 </Button>
