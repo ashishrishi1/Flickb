@@ -116,7 +116,7 @@ const Login = ({ onLogin }) => {
 
           <Button
             type="submit"
-            className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 text-lg font-semibold"
+            className="w-full bg-[#3A77FF] hover:bg-[#2E66E6] text-white py-6 text-lg font-semibold"
           >
             {isLogin ? 'Login' : 'Sign Up'}
           </Button>
