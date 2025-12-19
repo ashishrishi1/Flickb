@@ -54,10 +54,14 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-cyan-50 flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-50 flex items-center justify-center py-12 px-4">
       <Card className="w-full max-w-md p-8 shadow-xl">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-teal-600 mb-2">OLX</h1>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_online-bazaar-89/artifacts/z3u1m5ig_Gemini_Generated_Image_sn5qd6sn5qd6sn5q.png" 
+            alt="FlickB" 
+            className="h-16 w-auto mx-auto mb-4"
+          />
           <p className="text-gray-600">{isLogin ? 'Welcome back!' : 'Create your account'}</p>
         </div>
 
