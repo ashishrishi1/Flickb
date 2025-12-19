@@ -14,17 +14,17 @@ export const categories = [
 export const products = [
   {
     id: 1,
-    title: 'iPhone 13 Pro Max - Excellent Condition',
-    price: 65000,
-    location: 'Mumbai, Maharashtra',
+    title: 'Apple iPhone 14 Pro 256GB - Space Black - Unlocked',
+    price: 52000,
+    location: 'Bangalore, Karnataka',
     image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbmljc3xlbnwwfHx8fDE3NjYwODIyNDN8MA&ixlib=rb-4.1.0&q=85',
     category: 'Mobiles',
     categoryId: 1,
-    postedAt: '2 hours ago',
-    description: 'iPhone 13 Pro Max 256GB in Sierra Blue. Barely used, like new condition with all accessories and box.',
+    postedAt: '3 days ago',
+    description: 'iPhone 14 Pro 256GB Space Black, unlocked, battery health 91%. Minor scuffs on frame. Includes original box, USB-C charger, case. iCloud removed, factory reset. Test before buying.',
     seller: {
-      name: 'Rahul Sharma',
-      memberSince: 'Member since 2020',
+      name: 'Rajesh Kumar',
+      memberSince: 'Member since 2019',
       verified: true
     },
     images: [
