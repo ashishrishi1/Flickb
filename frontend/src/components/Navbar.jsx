@@ -83,7 +83,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
               </Link>
             )}
             <Link to="/post-ad">
-              <Button className="bg-blue-700-600 hover:bg-blue-700-700 text-white flex items-center space-x-2 px-6 py-5 rounded-full shadow-md hover:shadow-lg transition-all">
+              <Button className="bg-[#FF8C00] hover:bg-[#FF7A00] text-white flex items-center space-x-2 px-6 py-5 rounded-full shadow-md hover:shadow-lg transition-all">
                 <Plus size={20} />
                 <span className="font-bold">SELL</span>
               </Button>
