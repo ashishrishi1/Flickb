@@ -28,7 +28,7 @@ const PostAd = ({ isAuthenticated }) => {
         <Card className="p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Login Required</h2>
           <p className="text-gray-600 mb-6">Please login to post an ad</p>
-          <Button onClick={() => navigate('/login')} className="bg-teal-600 hover:bg-teal-700">
+          <Button onClick={() => navigate('/login')} className="bg-[#FF8C00] hover:bg-[#FF7A00]">
             Go to Login
           </Button>
         </Card>
@@ -179,7 +179,7 @@ const PostAd = ({ isAuthenticated }) => {
             <div className="pt-4">
               <Button
                 type="submit"
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 text-lg font-semibold"
+                className="w-full bg-[#FF8C00] hover:bg-[#FF7A00] text-white py-6 text-lg font-semibold"
               >
                 Post Ad
               </Button>
