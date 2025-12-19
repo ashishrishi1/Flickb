@@ -109,36 +109,40 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-teal-400">OLX</h3>
-              <p className="text-gray-400">Your trusted marketplace for buying and selling</p>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_online-bazaar-89/artifacts/z3u1m5ig_Gemini_Generated_Image_sn5qd6sn5qd6sn5q.png" 
+                alt="FlickB" 
+                className="h-12 w-auto mb-4 filter brightness-0 invert"
+              />
+              <p className="text-gray-400">India's trusted marketplace for buying and selling</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link to="/" className="hover:text-teal-400 transition-colors">Home</Link></li>
-                <li><Link to="/categories" className="hover:text-teal-400 transition-colors">Categories</Link></li>
-                <li><Link to="/post-ad" className="hover:text-teal-400 transition-colors">Post Ad</Link></li>
+                <li><Link to="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
+                <li><Link to="/categories" className="hover:text-blue-400 transition-colors">Categories</Link></li>
+                <li><Link to="/post-ad" className="hover:text-blue-400 transition-colors">Post Ad</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Safety Tips</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Contact Us</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Safety Tips</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Contact Us</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Facebook</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors">Instagram</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Facebook</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Twitter</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Instagram</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 OLX Clone. All rights reserved.</p>
+            <p>&copy; 2025 Flickb - A subsidiary of Homlivia Pvt. Ltd.</p>
           </div>
         </div>
       </footer>
