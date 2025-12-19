@@ -41,7 +41,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
               />
               <button
                 type="submit"
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-teal-600 transition-colors"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-600 transition-colors"
               >
                 <Search size={20} />
               </button>
