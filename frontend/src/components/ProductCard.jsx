@@ -31,7 +31,7 @@ const ProductCard = ({ product, onFavorite, isFavorited }) => {
       
       <div className="p-4 bg-white">
         <Link to={`/product/${product.id}`}>
-          <h3 className="font-semibold text-lg mb-2 text-gray-800 line-clamp-2 group-hover:text-blue-700 transition-colors">
+          <h3 className="font-semibold text-lg mb-2 text-gray-800 line-clamp-2 group-hover:text-[#3A77FF] transition-colors">
             {product.title}
           </h3>
         </Link>
