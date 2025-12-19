@@ -62,7 +62,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 </Link>
                 <div className="relative group">
                   <button className="flex items-center space-x-2 text-gray-700 hover:text-[#3A77FF]-600 transition-colors">
-                    <div className="w-8 h-8 bg-blue-700-600 rounded-full flex items-center justify-center text-white font-medium">
+                    <div className="w-8 h-8 bg-[#3A77FF]-600 rounded-full flex items-center justify-center text-white font-medium">
                       {user?.name?.charAt(0) || 'U'}
                     </div>
                     <span className="font-medium">{user?.name || 'User'}</span>
