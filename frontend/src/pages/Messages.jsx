@@ -49,7 +49,7 @@ const Messages = ({ isAuthenticated }) => {
           <h2 className="text-2xl font-bold mb-4">Login Required</h2>
           <p className="text-gray-600 mb-6">Please login to view your messages</p>
           <Link to="/login">
-            <Button className="bg-teal-600 hover:bg-teal-700">Go to Login</Button>
+            <Button className="bg-[#3A77FF] hover:bg-[#2E66E6]">Go to Login</Button>
           </Link>
         </Card>
       </div>
@@ -167,7 +167,7 @@ const Messages = ({ isAuthenticated }) => {
                       onChange={(e) => setNewMessage(e.target.value)}
                       className="flex-1"
                     />
-                    <Button type="submit" className="bg-teal-600 hover:bg-teal-700">
+                    <Button type="submit" className="bg-[#3A77FF] hover:bg-[#2E66E6]">
                       <Send size={20} />
                     </Button>
                   </div>
