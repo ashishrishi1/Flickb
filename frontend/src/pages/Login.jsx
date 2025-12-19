@@ -125,7 +125,7 @@ const Login = ({ onLogin }) => {
         <div className="mt-6 text-center">
           <button
             onClick={() => setIsLogin(!isLogin)}
-            className="text-teal-600 hover:text-teal-700 font-medium"
+            className="text-[#3A77FF] hover:text-[#2E66E6] font-medium"
           >
             {isLogin ? "Don't have an account? Sign up" : 'Already have an account? Login'}
           </button>
