@@ -169,7 +169,7 @@ const ProductDetail = ({ isAuthenticated }) => {
             <Card className="p-6">
               <h3 className="text-lg font-bold mb-4">Seller Information</h3>
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 bg-[#3A77FF] rounded-full flex items-center justify-center text-white text-2xl font-bold">
                   {product.seller.name.charAt(0)}
                 </div>
                 <div>
