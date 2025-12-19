@@ -52,16 +52,16 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
           <div className="hidden md:flex items-center space-x-6">
             {isAuthenticated ? (
               <>
-                <Link to="/messages" className="flex items-center space-x-1 text-gray-700 hover:text-blue-700-600 transition-colors">
+                <Link to="/messages" className="flex items-center space-x-1 text-gray-700 hover:text-[#3A77FF]-600 transition-colors">
                   <MessageCircle size={22} />
                   <span className="font-medium">Chat</span>
                 </Link>
-                <Link to="/favorites" className="flex items-center space-x-1 text-gray-700 hover:text-blue-700-600 transition-colors">
+                <Link to="/favorites" className="flex items-center space-x-1 text-gray-700 hover:text-[#3A77FF]-600 transition-colors">
                   <Heart size={22} />
                   <span className="font-medium">Favorites</span>
                 </Link>
                 <div className="relative group">
-                  <button className="flex items-center space-x-2 text-gray-700 hover:text-blue-700-600 transition-colors">
+                  <button className="flex items-center space-x-2 text-gray-700 hover:text-[#3A77FF]-600 transition-colors">
                     <div className="w-8 h-8 bg-blue-700-600 rounded-full flex items-center justify-center text-white font-medium">
                       {user?.name?.charAt(0) || 'U'}
                     </div>
