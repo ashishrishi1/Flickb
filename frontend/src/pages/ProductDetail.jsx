@@ -159,7 +159,7 @@ const ProductDetail = ({ isAuthenticated }) => {
 
               <Button
                 onClick={handleChat}
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 text-lg font-semibold rounded-lg shadow-md hover:shadow-lg transition-all"
+                className="w-full bg-[#FF8C00] hover:bg-[#FF7A00] text-white py-6 text-lg font-semibold rounded-lg shadow-md hover:shadow-lg transition-all"
               >
                 Chat with Seller
               </Button>
