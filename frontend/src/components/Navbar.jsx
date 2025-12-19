@@ -37,7 +37,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
                 placeholder="Find Cars, Mobile Phones and more..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-4 pr-12 py-5 border-2 border-gray-200 focus:border-teal-500 rounded-md"
+                className="w-full pl-4 pr-12 py-5 border-2 border-gray-200 focus:border-blue-600 rounded-md"
               />
               <button
                 type="submit"
