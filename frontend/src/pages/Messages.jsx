@@ -90,7 +90,7 @@ const Messages = ({ isAuthenticated }) => {
                         <div className="flex items-center justify-between mb-1">
                           <h3 className="font-semibold text-sm truncate">{conv.otherUser}</h3>
                           {conv.unread && (
-                            <span className="w-2 h-2 bg-teal-600 rounded-full"></span>
+                            <span className="w-2 h-2 bg-[#3A77FF] rounded-full"></span>
                           )}
                         </div>
                         <p className="text-sm text-gray-600 truncate mb-1">{conv.productTitle}</p>
@@ -142,7 +142,7 @@ const Messages = ({ isAuthenticated }) => {
                       <div
                         className={`max-w-xs md:max-w-md px-4 py-2 rounded-2xl ${
                           msg.sender === 'me'
-                            ? 'bg-teal-600 text-white'
+                            ? 'bg-[#3A77FF] text-white'
                             : 'bg-white border'
                         }`}
                       >
