@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import { categories } from '../mockData';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -18,9 +19,7 @@ const PostAd = ({ isAuthenticated }) => {
     price: '',
     category: '',
     location: '',
-    images: []
   });
-  const [imagePreviews, setImagePreviews] = useState([]);
 
   if (!isAuthenticated) {
     return (
@@ -36,26 +35,7 @@ const PostAd = ({ isAuthenticated }) => {
     );
   }
 
-  const handleImageUpload = (e) => {
-    const files = Array.from(e.target.files);
-    if (files.length + imagePreviews.length > 5) {
-      toast({ title: 'Maximum 5 images allowed', variant: 'destructive' });
-      return;
-    }
-
-    const newPreviews = files.map(file => URL.createObjectURL(file));
-    setImagePreviews([...imagePreviews, ...newPreviews]);
-    setFormData({ ...formData, images: [...formData.images, ...files] });
-  };
-
-  const removeImage = (index) => {
-    const newPreviews = imagePreviews.filter((_, i) => i !== index);
-    const newImages = formData.images.filter((_, i) => i !== index);
-    setImagePreviews(newPreviews);
-    setFormData({ ...formData, images: newImages });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!formData.title || !formData.description || !formData.price || !formData.category || !formData.location) {
@@ -63,125 +43,62 @@ const PostAd = ({ isAuthenticated }) => {
       return;
     }
 
-    // In real app, this would submit to backend
-    console.log('Posting ad:', formData);
-    toast({ title: 'Ad posted successfully!' });
-    navigate('/');
+    try {
+      // This sends the data to your Python Backend
+      const response = await axios.post('http://localhost:8000/api/ads', {
+        title: formData.title,
+        description: formData.description,
+        price: parseFloat(formData.price),
+        category: formData.category,
+        location: formData.location
+      });
+
+      if (response.status === 200) {
+        toast({ title: 'Ad posted to MongoDB successfully!' });
+        navigate('/');
+      }
+    } catch (error) {
+      console.error("Error saving ad:", error);
+      toast({ title: 'Failed to save ad. Is backend running?', variant: 'destructive' });
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-3xl mx-auto px-4">
         <Card className="p-8">
-          <h1 className="text-3xl font-bold mb-6 text-gray-800">Post Your Ad</h1>
-          
+          <h1 className="text-3xl font-bold mb-6 text-gray-800">Post Your Ad (Live)</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Category */}
             <div>
               <Label htmlFor="category">Category *</Label>
               <Select onValueChange={(value) => setFormData({ ...formData, category: value })}>
-                <SelectTrigger className="mt-1">
-                  <SelectValue placeholder="Select a category" />
-                </SelectTrigger>
+                <SelectTrigger className="mt-1"><SelectValue placeholder="Select a category" /></SelectTrigger>
                 <SelectContent>
                   {categories.map((cat) => (
-                    <SelectItem key={cat.id} value={cat.name}>
-                      {cat.name}
-                    </SelectItem>
+                    <SelectItem key={cat.id} value={cat.name}>{cat.name}</SelectItem>
                   ))}
                 </SelectContent>
               </Select>
             </div>
-
-            {/* Title */}
             <div>
               <Label htmlFor="title">Ad Title *</Label>
-              <Input
-                id="title"
-                placeholder="E.g., iPhone 13 Pro Max 256GB"
-                value={formData.title}
-                onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                className="mt-1"
-              />
+              <Input id="title" placeholder="What are you selling?" value={formData.title} onChange={(e) => setFormData({ ...formData, title: e.target.value })} />
             </div>
-
-            {/* Description */}
             <div>
               <Label htmlFor="description">Description *</Label>
-              <Textarea
-                id="description"
-                placeholder="Describe your item in detail..."
-                value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                rows={5}
-                className="mt-1"
-              />
+              <Textarea id="description" placeholder="Describe it..." value={formData.description} onChange={(e) => setFormData({ ...formData, description: e.target.value })} rows={5} />
             </div>
-
-            {/* Price */}
             <div>
               <Label htmlFor="price">Price (₹) *</Label>
-              <Input
-                id="price"
-                type="number"
-                placeholder="Enter price"
-                value={formData.price}
-                onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                className="mt-1"
-              />
+              <Input id="price" type="number" placeholder="Enter amount" value={formData.price} onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
             </div>
-
-            {/* Location */}
             <div>
               <Label htmlFor="location">Location *</Label>
-              <Input
-                id="location"
-                placeholder="E.g., Mumbai, Maharashtra"
-                value={formData.location}
-                onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                className="mt-1"
-              />
+              <Input id="location" placeholder="City, State" value={formData.location} onChange={(e) => setFormData({ ...formData, location: e.target.value })} />
             </div>
-
-            {/* Images */}
-            <div>
-              <Label>Upload Images (Max 5)</Label>
-              <div className="mt-2 grid grid-cols-3 gap-4">
-                {imagePreviews.map((preview, index) => (
-                  <div key={index} className="relative">
-                    <img src={preview} alt={`Preview ${index + 1}`} className="w-full h-32 object-cover rounded-lg" />
-                    <button
-                      type="button"
-                      onClick={() => removeImage(index)}
-                      className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600"
-                    >
-                      <X size={16} />
-                    </button>
-                  </div>
-                ))}
-                {imagePreviews.length < 5 && (
-                  <label className="border-2 border-dashed border-gray-300 rounded-lg h-32 flex flex-col items-center justify-center cursor-pointer hover:border-[#3A77FF] transition-colors">
-                    <Upload className="text-gray-400 mb-2" size={32} />
-                    <span className="text-sm text-gray-500">Add Photo</span>
-                    <input
-                      type="file"
-                      accept="image/*"
-                      multiple
-                      onChange={handleImageUpload}
-                      className="hidden"
-                    />
-                  </label>
-                )}
-              </div>
-            </div>
-
-            {/* Submit Button */}
             <div className="pt-4">
-              <Button
-                type="submit"
-                className="w-full bg-[#FF8C00] hover:bg-[#FF7A00] text-white py-6 text-lg font-semibold"
-              >
-                Post Ad
+              <Button type="submit" className="w-full bg-[#FF8C00] hover:bg-[#FF7A00] text-white py-6 text-lg font-semibold">
+                Post Ad to Database
               </Button>
             </div>
           </form>
